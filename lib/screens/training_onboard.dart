@@ -46,13 +46,14 @@ class _TrainingOnboardState extends State<TrainingOnboard> {
                 child: Padding(
                   padding: const EdgeInsets.all(4.0,),
                   child: Text(
-                    '              Welcome to the '
+                    'Welcome to the '
                         '\n Training + Internship Program!',
                     style: GoogleFonts.poppins(
                       fontSize: 20,
                       fontWeight: FontWeight.w500,
                       color: Colors.black,
                     ),
+                    textAlign: TextAlign.center,
                   ),
                 ),
               ),
@@ -80,37 +81,14 @@ class _TrainingOnboardState extends State<TrainingOnboard> {
                             recognizer: TapGestureRecognizer()
                               ..onTap = () async {},
                           ),
-                          const TextSpan(text: ' in the program!'),
-                          const TextSpan(text: ' \nProgram details and next steps have been \n sent to your'),
                           TextSpan(
-                            text: ' registered email.',
-                            style: GoogleFonts.poppins(
-                              color: Color(0xFFC1272D),
-                              fontSize: 14,
-                              fontWeight: FontWeight.w400,
-                            ),
-                            recognizer: TapGestureRecognizer()
-                              ..onTap = () async {},
-                          ),
-                          TextSpan(
-                            text: ' \nPrepare to gain',
+                            text: ' in the program!',
                             style: GoogleFonts.poppins(
                               color: Colors.black,
                               fontSize: 14,
                               fontWeight: FontWeight.w400,
                             ),
                           ),
-                          TextSpan(
-                            text: ' hands-on skills ',
-                            style: GoogleFonts.poppins(
-                              fontSize: 14,
-                              fontWeight: FontWeight.w400,
-                              color: Color(0xFFC1272D),
-                            ),
-                            recognizer: TapGestureRecognizer()
-                              ..onTap = () async {},
-                          ),
-                          const TextSpan(text: ' and real-\n world experience that will set you apart.'),
                         ],
                       ),
                       textAlign: TextAlign.center,
@@ -118,10 +96,76 @@ class _TrainingOnboardState extends State<TrainingOnboard> {
                   ),
                 ),
               ),
+              const SizedBox(height: 6),
+              Center(child: Padding(
+                padding: const EdgeInsets.all(4.0),
+                child: Expanded(
+                  child: Text.rich(
+                    TextSpan(
+                      text:
+                      'Program details and next steps have been sent to your',
+                      style: GoogleFonts.poppins(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.black),
+                      children: <TextSpan>[
+                        TextSpan(
+                          text: ' registered email.',
+                          style: GoogleFonts.poppins(
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                            color: Color(0xFFC1272D),
+                          ),
+                          recognizer: TapGestureRecognizer()
+                            ..onTap = () async {},
+                        ),
+                      ],
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              )),
+              const SizedBox(height: 6),
+              Center(child: Padding(
+                padding: const EdgeInsets.all(4.0),
+                child: Expanded(
+                  child: Text.rich(
+                    TextSpan(
+                      text:
+                      'Prepare to gain',
+                      style: GoogleFonts.poppins(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.black),
+                      children: <TextSpan>[
+                        TextSpan(
+                          text: ' hands-on skills',
+                          style: GoogleFonts.poppins(
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                            color: Color(0xFFC1272D),
+                          ),
+                          recognizer: TapGestureRecognizer()
+                            ..onTap = () async {},
+                        ),
+                        TextSpan(
+                          text: ' and real-\nworld experience that will set you apart.',
+                          style: GoogleFonts.poppins(
+                            color: Colors.black,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
+                      ],
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              )),
               const SizedBox(height: 80),
               Center(
                 child: SizedBox(
-                  width: double.infinity,
+                  width: 230,
                   child: GradientButton(
                     text: "Go to Dashboard",
                     gradientColors: [Color(0xFFEFC59B), Color(0xFF95152F)],

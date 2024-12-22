@@ -52,6 +52,7 @@ class _UnimentorsSubscribeState extends State<UnimentorsSubscribe> {
               const GradientCard(
                   gradientColors: [Color(0xFFA92AB4), Color(0xFF4720A3)],
                   title: 'Subscribe to this mentorship\nprogram',
+                  discountPriceColor: Color(0xFFBFBFBF),
                   price: '10,000',
                   discountPrice: '25,000',
                   offPercentage: '40',

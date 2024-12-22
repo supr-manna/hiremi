@@ -51,6 +51,7 @@ class _TrainingSubscribeState extends State<TrainingSubscribe> {
               const SizedBox(height: 20),
               const GradientCard(
                   gradientColors: [Color(0xFFC08B6C), Color(0xFFF5D2B0)],
+                  discountPriceColor: Color(0xFF58311D),
                   title: 'Subscribe to this mentorship\nprogram',
                   price: '₹2,50,000',
                   discountPrice: '3,97,500',

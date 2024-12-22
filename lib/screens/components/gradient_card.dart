@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 class GradientCard extends StatelessWidget {
   final List<Color> gradientColors;
+  final Color discountPriceColor;
   final String title;
   final String price;
   final String discountPrice;
@@ -12,6 +13,7 @@ class GradientCard extends StatelessWidget {
   const GradientCard({
     Key? key,
     required this.gradientColors,
+    required this.discountPriceColor,
     required this.title,
     required this.price,
     required this.discountPrice,
@@ -64,7 +66,7 @@ class GradientCard extends StatelessWidget {
               Text(
                 "₹$discountPrice",
                 style: GoogleFonts.poppins(
-                  color: Colors.white.withOpacity(0.7),
+                  color: discountPriceColor,
                   fontSize: 16,
                   fontWeight: FontWeight.w600,
                   decoration: TextDecoration.lineThrough,

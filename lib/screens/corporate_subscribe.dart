@@ -52,6 +52,7 @@ class _CorporateSubscribeState extends State<CorporateSubscribe> {
               const GradientCard(
                   gradientColors: [Color(0xFF4577A6), Color(0xFF273389)],
                   title: 'Subscribe to this mentorship\nprogram',
+                  discountPriceColor: Color(0xFFBFBFBF),
                   price: '₹2,50,000',
                   discountPrice: '3,97,500',
                   offPercentage: '40',
